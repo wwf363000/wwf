@@ -3,196 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>杯水喻人生 - 文峰</title>
+    <title>杯水喻人生 & The Cup of Water: An Analogy for Life</title>
     <style>
+        /* 全局基础样式：极简、适配所有设备、留白充足 */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         body {
-            font-family: "SimHei", "Microsoft YaHei", "Georgia", serif;
-            font-size: 17px;
-            line-height: 2;
-            background-color: #f5f7f9;
-            color: #2c3e50;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #fdfdfd;
+            padding: 50px 20px;
             max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
         }
+        /* 标题样式 */
         h1 {
+            font-size: 2.2rem;
+            color: #222;
             text-align: center;
-            font-size: 28px;
-            color: #1a202c;
-            margin-bottom: 40px;
-            font-weight: normal;
-            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 50px;
+            font-weight: 700;
+            border-bottom: 1px solid #eee;
             padding-bottom: 20px;
         }
-        .poem-block {
-            margin: 25px 0;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        /* 中英双语段落容器 */
+        .paragraph-group {
+            margin-bottom: 12px;
         }
+        /* 中文文本样式 */
         .cn {
-            color: #2d3748;
-            margin-bottom: 15px;
-            border-left: 3px solid #4299e1;
-            padding-left: 12px;
+            font-size: 1.1rem;
+            color: #222;
+            margin-bottom: 4px;
         }
+        /* 英文文本样式：浅灰、斜体、对齐中文 */
         .en {
-            color: #4a5568;
+            font-size: 1rem;
+            color: #666;
             font-style: italic;
-            border-left: 3px solid #9f7aea;
-            padding-left: 12px;
+            margin-bottom: 16px;
         }
-        .mantra-box {
-            margin: 25px 0;
-            padding: 20px;
-            background: #edf2f7;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .mantra-cn {
-            color: #2d3748;
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-        .mantra-en {
-            color: #4a5568;
-            font-style: italic;
-            font-size: 16px;
-        }
-        .author {
-            text-align: right;
-            margin-top: 50px;
-            color: #718090;
-            font-size: 18px;
-        }
+        /* 版权声明样式 */
         .copyright {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 1rem;
+            color: #888;
             text-align: center;
-            margin-top: 30px;
-            color: #a0aec0;
-            font-size: 15px;
+        }
+        /* 移动端适配：缩小字体、减少留白 */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px 15px;
+            }
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 30px;
+            }
+            .cn {
+                font-size: 1rem;
+            }
+            .en {
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 标题 -->
     <h1>杯水喻人生<br>The Cup of Water: An Analogy for Life</h1>
 
-    <!-- 杯水喻人生核心内容 -->
-    <div class="poem-block">
-        <p class="cn">假设世界最初，是一杯完全静止的水。<br>
-        静止，就没有分别；<br>
-        没有分别，就没有你我。</p>
-        <p class="en">Suppose the world began as a perfectly still cup of water.<br>
-        Stillness means no distinction;<br>
-        No distinction means no you and no me.</p>
+    <div class="paragraph-group">
+        <p class="cn">假设世界最初，是一杯完全静止的水。</p>
+        <p class="en">Suppose the world began as a perfectly still cup of water.</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">水动了，倾斜了一下。<br>
-        于是有了多的一面，少的一面。<br>
-        我把少的一面叫 “我”，把多的一面叫 “世界”。<br>
-        以为我是我，世界是世界。</p>
-        <p class="en">Then the water moved and tilted a little.<br>
-        There came a fuller side and an emptier side.<br>
-        I called the emptier side "me", and the fuller side "the world",<br>
-        thinking I was me, and the world was the world.</p>
+    <div class="paragraph-group">
+        <p class="cn">静止，就没有分别；</p>
+        <p class="en">Stillness means no distinction;</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">但水依然还是同一杯水。<br>
-        人之所以有烦恼，是因为明明得到了，<br>
-        却还摆脱不了 “失去” 的概念。<br>
-        因为水的倾斜，本就违背了它原本静止的特性。</p>
-        <p class="en">But the essence of water never changed-it was still the same cup.<br>
-        Suffering arises because, even when we have gained,<br>
-        we cannot let go of the idea of "loss".<br>
-        For the tilting of the water goes against its original stillness.</p>
+    <div class="paragraph-group">
+        <p class="cn">没有分别，就没有你我。</p>
+        <p class="en">No distinction means no you and no me.</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">头脑认为：我们是分开的。<br>
-        执着 “我是我，他是他”。<br>
-        但心是不会变的，一直在提醒我们：本是一体。</p>
-        <p class="en">The mind thinks: we are separate.<br>
-        Clinging to "I am I, he is he".<br>
-        But the heart never forgets, always reminding us: we are one.</p>
+    <div class="paragraph-group">
+        <p class="cn">水动了，倾斜了一下。</p>
+        <p class="en">Then the water moved and tilted a little.</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">人痛苦，不是因为世界错了，<br>
-        而是头脑在分裂，心却合一。</p>
-        <p class="en">Human suffering is not because the world is wrong,<br>
-        but because the mind divides, while the heart unites.</p>
+    <div class="paragraph-group">
+        <p class="cn">于是有了多的一面，少的一面。</p>
+        <p class="en">There came a fuller side and an emptier side.</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">头脑会忘，心永远不会。<br>
-        它一直提醒我们：<br>
-        水，还是那一杯。</p>
-        <p class="en">The mind can forget, but the heart never will.<br>
-        It keeps reminding us:<br>
-        The water is still that same cup.</p>
+    <div class="paragraph-group">
+        <p class="cn">我把少的一面叫 “我”，把多的一面叫 “世界”。</p>
+        <p class="en">I called the emptier side "me", and the fuller side "the world".</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">佛家所言 “本无分别、自性清净”，<br>
-        道家所讲 “道生混沌、复归无极”，<br>
-        圣经说 “上帝是一体，万物皆归于一”<br>
-        我说这杯水 “一体为本、分裂为扰”，<br>
-        都在说：世间本无对立，烦恼源于分别。</p>
-        <p class="en">Buddhism says: "No distinction inherently, pure original nature."<br>
-        Taoism teaches: "The Tao gives birth to chaos, returning to the infinite."<br>
-        The Bible states: "God is one, and all things are united in Him."<br>
-        I say of this cup: "Oneness is the root, division is disturbance."<br>
-        All speak the same: no opposition in the world, suffering arises from distinction.</p>
+    <div class="paragraph-group">
+        <p class="cn">以为我是我，世界是世界。</p>
+        <p class="en">thinking I was me, and the world was the world.</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">这个世界很多人都觉得没因果，大多数人觉得都对，因为大多数人都只认现象层的东西；<br>
-        但因果不单单就在现象层。那因果从现实、客观的角度讲成不成立？我觉得绝对成立，而且是必然成立。</p>
-        <p class="en">Many in this world think there is no karma, and most believe they are right, for they only recognize things on the phenomenal level.<br>
-        But karma exists not merely on the phenomenal level. Does karma hold objectively from a realistic perspective? I firmly believe it does, absolutely and inevitably.</p>
+    <div class="paragraph-group">
+        <p class="cn">但水依然还是同一杯水。</p>
+        <p class="en">But the water was still the same cup.</p>
     </div>
-
-    <div class="poem-block">
+    <div class="paragraph-group">
+        <p class="cn">人之所以有烦恼，是因为明明得到了，</p>
+        <p class="en">Suffering arises because even when we have gained,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">却还摆脱不了 “失去” 的概念。</p>
+        <p class="en">we cannot let go of the idea of "loss".</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为水的倾斜，本就违背了它原本静止的特性。</p>
+        <p class="en">For the tilting of the water goes against its original stillness.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">头脑认为：我们是分开的。</p>
+        <p class="en">The mind thinks: we are separate.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">执着 “我是我，他是他”。</p>
+        <p class="en">Clinging to "I am I, he is he".</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">但心是不会变的，一直在提醒我们：本是一体。</p>
+        <p class="en">But the heart never changes, always reminding us: we are one.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">人痛苦，不是因为世界错了，</p>
+        <p class="en">Human suffering is not because the world is wrong,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">而是头脑在分裂，心却合一。</p>
+        <p class="en">but because the mind divides, while the heart unites.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">头脑会忘，心永远不会。</p>
+        <p class="en">The mind can forget, but the heart never will.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">它一直提醒我们：</p>
+        <p class="en">It keeps reminding us:</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">水，还是那一杯。</p>
+        <p class="en">The water is still that same cup.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">佛家所言 “本无分别、自性清净”，</p>
+        <p class="en">Buddhism says: "No distinction inherently, pure original nature."</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">道家所讲 “道生混沌，复归无极”，</p>
+        <p class="en">Taoism teaches: "The Tao gives birth to chaos, returning to the infinite."</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">圣经说 “上帝是一体，万物皆归于一”。</p>
+        <p class="en">The Bible states: "God is one, and all things are united in Him."</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">我说这杯水 “一体为本、分裂为扰”，</p>
+        <p class="en">I say of this cup: "Oneness is the root, division is disturbance."</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">都在说：世间本无对立，烦恼源于分别。</p>
+        <p class="en">All speak the same: no opposition in the world, suffering arises from distinction.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">这个世界很多人都觉得没因果，大多数人觉得都对，</p>
+        <p class="en">Many in this world think there is no karma, and most believe they are right,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为大多数人都只认现象层的东西；</p>
+        <p class="en">for they only recognize things on the phenomenal level.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">但因果不单单就在现象层。</p>
+        <p class="en">But karma exists not merely on the phenomenal level.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">那因果从现实、客观的角度讲成不成立？</p>
+        <p class="en">Does karma hold objectively from a realistic perspective?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">我觉得绝对成立，而且是必然成立。</p>
+        <p class="en">I firmly believe it does, absolutely and inevitably.</p>
+    </div>
+    <div class="paragraph-group">
         <p class="cn">那什么叫因果呢？</p>
         <p class="en">What is karma?</p>
     </div>
-
-    <!-- 因果口诀 -->
-    <div class="mantra-box">
-        <p class="mantra-cn">记住这个口诀：<br>本就无二、何来因果、当下因当下果。</p>
-        <p class="mantra-en">First, remember this mantra:<br>Originally there is no duality; wherefore comes cause and effect? The cause of the present moment is the effect of the present moment.</p>
+    <div class="paragraph-group">
+        <p class="cn">记住这个口诀：</p>
+        <p class="en">First, remember this mantra:</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">本就无二、何来因果、当下因当下果。</p>
+        <p class="en">Originally there is no duality; wherefore comes cause and effect? The cause of the present moment is the effect of the present moment.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">我现在一句话给你们讲明白什么叫因果：</p>
+        <p class="en">Let me make it clear in one sentence:</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因好理解，因为它是在现象层；</p>
+        <p class="en">The cause is easy to understand, for it lies in the phenomenal layer.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">但是果呢，很多人认为是将来以后发生的事情，其实并不是，</p>
+        <p class="en">As for the effect, many people think it is something that happens in the future, but this is not true.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">果在本源层，在心里，不在现象里。</p>
+        <p class="en">The effect lies in the origin layer, in the heart, not in the phenomenal world.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">我为什么说有因果，而且也必然成立，</p>
+        <p class="en">The reason I say karma exists and is inevitable,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">原因很简单：</p>
+        <p class="en">is simple:</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为本源层的果也可以变成现象层的因，</p>
+        <p class="en">because the effect in the origin layer can become the cause in the phenomenal layer,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">然后现象层的因又可以变成本源层的果。</p>
+        <p class="en">and the cause in the phenomenal layer can in turn become the effect in the origin layer.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">简单讲个道理：比如我当下拿了别人一个面包，</p>
+        <p class="en">To put it simply: Suppose I take a piece of bread from someone right now,</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">如果它是现象层的因；</p>
+        <p class="en">this is the cause on the phenomenal level.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">而我心中那个 “他少了一个面包” 的感受、这个概念，就叫本源层的果。</p>
+        <p class="en">The feeling and thought in my heart that "he has one less piece of bread" is the effect on the origin layer.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">反过来，心中的这个概念、感受 (果)，</p>
+        <p class="en">In turn, this inner thought and feeling (the effect),</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">又可以决定你下一步的选择 (因)，循环往复，就叫因果。</p>
+        <p class="en">can determine your next choice (the cause). This cycle repeats endlessly, and this is called karma.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">什么叫欲望？</p>
+        <p class="en">What is desire?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">我们一直觉得自己少了什么、空、缺、不安、却说不出来</p>
+        <p class="en">We always feel we are missing something—empty, lacking, uneasy—but cannot name it.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">于是本能去追求好的，要拥有，要弥补</p>
+        <p class="en">So we instinctively pursue what is good, seek to possess, to fill the void.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">但越补越缺，越补欲望越疯狂。</p>
+        <p class="en">Yet the more we fill, the emptier we become; the more we chase, the wilder desire grows.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">为什么？</p>
+        <p class="en">Why?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为都补错地方了。</p>
+        <p class="en">Because we are filling the wrong place.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">欲望不是要你补外面的东西</p>
+        <p class="en">Desire is not asking you to fill yourself with external things.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">欲望是人心平衡机制在提醒，</p>
+        <p class="en">Desire is the reminder from the heart’s mechanism of balance.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">欲望的来源是 人心的平衡机制，平衡机制来源于一体效应。</p>
+        <p class="en">Its source is the broken connection to oneness—the heart has lost its balance.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">欲望不是要你补 “身”</p>
+        <p class="en">Desire is not asking you to fill the body.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">是要你补 “心”</p>
+        <p class="en">It is asking you to heal the heart.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">不是补 “拥有”</p>
+        <p class="en">Not by acquiring.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">是补 “失去”</p>
+        <p class="en">but by reclaiming what was lost.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">钱、情、物、面子、成就，永远补不满。</p>
+        <p class="en">Money, affection, things, pride, achievement—they can never fill the void; the more you take, the thirstier you get.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">往心里补，回归平衡、恢复链接，欲望自然平息。</p>
+        <p class="en">Fill the heart: return to balance, restore the connection—and desire will naturally subside.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">为什么人永远不知足？</p>
+        <p class="en">Why are people never satisfied?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">为什么越追求越痛苦？</p>
+        <p class="en">Why does more pursuit bring more suffering?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">为什么所有外在满足都是暂时的？</p>
+        <p class="en">Why is all external fulfillment only temporary?</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为欲望的根不在外面，在心里。</p>
+        <p class="en">Because the root of desire is not outside, but in the heart.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">欲望不是索取的信号，</p>
+        <p class="en">Desire is not a signal to take.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">是回家的提醒。</p>
+        <p class="en">It is a reminder to return home.</p>
+    </div>
+    <div class="paragraph-group">
+        <p class="cn">因为我们自始至终都是同一杯水。</p>
+        <p class="en">For we have always been, and will always be, the same cup of water.</p>
     </div>
 
-    <div class="poem-block">
-        <p class="cn">我现在一句话给你们讲明白什么叫因果：因好理解，因为它是在现象层；但是果呢，很多人认为是将来以后发生的事情，其实并不是，果在本源层，在心里，不在现象里。</p>
-        <p class="en">Let me make it clear in one sentence: The cause is easy to understand, for it lies in the phenomenal layer. As for the effect, many people think it is something that happens in the future, but this is not true. The effect lies in the origin layer, in the heart, not in the phenomenal world.</p>
+    <!-- 版权声明 & 作者信息 -->
+    <div class="copyright">
+            <!-- 版权声明 & 作者信息 -->
+    <div class="copyright">
+        <p>© 2026 作者：王文峰 版权所有</p>
+        <p>Author: WANG Wenfeng All Rights Reserved</p>
     </div>
-
-    <div class="poem-block">
-        <p class="cn">我为什么说有因果，而且也必然成立，原因很简单：因为本源层的果也可以变成现象层的因，然后现象层的因又可以变成本源层的果。</p>
-        <p class="en">The reason I say karma exists and is inevitable is simple: the effect in the origin layer can become the cause in the phenomenal layer, and the cause in the phenomenal layer can in turn become the effect in the origin layer.</p>
-    </div>
-
-    <div class="poem-block">
-        <p class="cn">简单讲个道理：比如我当下拿了别人一个面包，如果它是现象层的因；而我心中那个 “他少了一个面包” 的感受、这个概念，就叫本源层的果。反过来，心中的这个概念、感受(果)，又可以决定你下一步的选择(因)，循环往复，就叫因果。</p>
-        <p class="en">To put it simply: Suppose I take a piece of bread from someone right now-this is the cause on the phenomenal level. The feeling and thought in my heart that "he has one less piece of bread" is the effect on the origin layer. In turn, this inner thought and feeling (the effect) can determine your next choice (the cause). This cycle repeats endlessly, and this is called karma.</p>
-    </div>
-
-    <div class="poem-block">
-        <p class="cn">而这个底层规律的本质原因只有一个 -- 都是同一杯水。</p>
-        <p class="en">And there is only one essential reason for this underlying law: we are all the same cup of water.</p>
-    </div>
-
-    <!-- 作者与版权 -->
-    <p class="author">作者：王文峰 | Author:WANG Wen Feng</p>
-    <p class="copyright">原创作品 请勿修改 | Original Work, No Modification Allowed</p>
 </body>
 </html>
